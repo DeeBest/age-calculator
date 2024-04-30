@@ -20,7 +20,7 @@ function calculateAge() {
     ageInput.style.outline = '1px solid #d5d8fe';
   } else {
     let age = getAge(ageInputValue);
-    resultsParagraph.textContent = `You Are ${age}${
+    resultsParagraph.textContent = `You Are ${age} ${
       age > 1 ? 'Years' : 'Year'
     } Old!`;
   }
