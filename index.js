@@ -9,6 +9,7 @@ const resultsParagraph = document.getElementById('results-paragraph');
 
 submitButton.addEventListener('click', (e) => {
   e.preventDefault();
+  resultsParagraph.style.opacity = '1';
   calculateAge();
 });
 
@@ -21,6 +22,8 @@ function calculateAge() {
     resultsParagraph.style.color = 'tomato';
     ageInput.style.outline = '1px solid #d5d8fe';
   } else {
+    resultsParagraph.style.color = '#d5d8fe';
+    ageInput.style.outline = 'none';
     let age = getAge(ageInputValue);
     resultsParagraph.textContent = `You Are ${age} ${
       age > 1 ? 'Years' : 'Year'

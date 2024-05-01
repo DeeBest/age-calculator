@@ -119,3 +119,7 @@ button:hover {
   box-shadow: none;
   transform: scale(0.98);
 }
+#results-paragraph {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
