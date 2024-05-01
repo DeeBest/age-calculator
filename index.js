@@ -14,7 +14,9 @@ submitButton.addEventListener('click', (e) => {
 
 function calculateAge() {
   const ageInputValue = ageInput.value;
-  if (ageInputValue === '') {
+  const currentDate = new Date();
+  const birthdayDate = new Date(ageInputValue);
+  if (ageInputValue === '' || birthdayDate > currentDate) {
     resultsParagraph.textContent = `Please Enter Valid Birthday.`;
     resultsParagraph.style.color = 'tomato';
     ageInput.style.outline = '1px solid #d5d8fe';
