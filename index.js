@@ -13,6 +13,11 @@ submitButton.addEventListener('click', (e) => {
   calculateAge();
 });
 
+ageInput.addEventListener(
+  'click',
+  () => (resultsParagraph.style.opacity = '0')
+);
+
 function calculateAge() {
   const ageInputValue = ageInput.value;
   const currentDate = new Date();
